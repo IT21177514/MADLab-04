@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
             if(password==reTypePassword){
 
-                Toast.makeText(this,"Hi You are Eligible!!!!",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Hi You are Eligible!!!!",Toast.LENGTH_SHORT).show()
             }//end if
         }//end submitButton.setOnClickListener
     }

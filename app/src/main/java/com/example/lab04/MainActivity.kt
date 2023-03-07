@@ -4,13 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val submitButton=findViewById<Button>(R.id.btnSubmit)
+        var submitButton=findViewById<Button>(R.id.btnSubmit)
         var edtNameEditText=findViewById<EditText>(R.id.edtName)
         var edtEmailEditText=findViewById<EditText>(R.id.edtEmail)
         var edtPasswordEditText=findViewById<EditText>(R.id.edtPassword)
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
             if(password==reTypePassword){
 
+                Toast.makeText(this,"Hi You are Eligible!!!!",Toast.LENGTH_LONG).show()
             }//end if
         }//end submitButton.setOnClickListener
     }
